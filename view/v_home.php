@@ -1,64 +1,68 @@
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
+    <div id="wrapper" class="toggled">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        FindIt
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="backlog.php">Backlog</a>
+                </li>
+                <li>
+                    <a href="">Login</a>
+                </li>
+                <li>
+                    <a href="#">Rechercher par nom</a>
+                </li>
+                <li>
+                    <a href="#">Rechercher par critère</a>
+                </li>
+            </ul>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
+        <!-- /#sidebar-wrapper -->
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-      </div>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+        <button type="button" href="#menu-toggle" class="btn btn-default" id="menu-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <i class="glyphicon glyphicon-th"></i>
+        </button>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Rechercher une personne par nom/prénom</h2>
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label for="inputPassword" class="col-sm-4 control-label">Rechercher par nom</label>
+                                <div class="col-sm-5">
+                                    <input type="password" class="form-control" id="inputPassword" placeholder="Nom">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword" class="col-sm-4 control-label">Rechercher par prénom</label>
+                                <div class="col-sm-5">
+                                    <input type="password" class="form-control" id="inputPassword" placeholder="Prénom">
+                                </div>
+                            </div>
+                            <div class="btn-search">
+                                <button type="button" class="btn btn-primary btn-lg">Rechercher</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
     </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
-
-      <hr>
-
-    
-    </body>
-</html>
+    <!-- /#wrapper -->

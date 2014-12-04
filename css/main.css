@@ -1,22 +1,51 @@
 
-
 /* ==========================================================================
-   Author's custom styles
+   Made by Irvin
    ========================================================================== */
 
+/* Title */
+h2 {
+	font-size: 22px;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
 
+.btn-search {
+	width: 127px;
+	margin: 10px auto 10px auto;
+}
 
+.btn-search button {
+	outline: none !important;
+}
 
+body {
+	background: url('../img/background.jpg') no-repeat center fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+}
 
+button#menu-toggle {
+	outline: none;
+	top: 0;
+	left: 0;
+}
 
+.container-fluid {
+	margin-top: 20px;
+	color: #fff;
+	padding: 20px 20px 10px 20px;
+	margin: 100px auto;
+}
 
+@media(min-width: 992px) {
+	.container-fluid {
+		width: 940px;
+	}
+}
 
-
-
-
-
-
-
-
-
-
+@media(max-width: 992px) {
+	.container-fluid {
+		width: 100%;
+	}
+}
