@@ -1,9 +1,9 @@
 <?php
 class PdoSio{   		
-      	private static $serveur='mysql:host=localhost';
-      	private static $bdd='dbname=applietudiants_sio_mvc';   		
-      	private static $user='applietudiants2' ;    		
-      	private static $mdp='sio' ;	
+      	private static $serveur='mysql:host=mysql51-44.pro';
+      	private static $bdd='dbname=projetsbxnuit';   		
+      	private static $user='projetsbxnuit' ;    		
+      	private static $mdp='greenShrimp' ;	
         private static $myPdo=null;
         private static $myPdoSio=null;
         
