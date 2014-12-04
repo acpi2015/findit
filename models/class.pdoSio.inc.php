@@ -1,36 +1,59 @@
 <?php
 class PdoSio{   		
       	private static $serveur='mysql:host=localhost';
-      	private static $bdd='dbname=';   		
-      	private static $user='' ;    		
-      	private static $mdp='' ;	
-        private static $monPdo=null;
-        private static $monPdoSio=null;
+      	private static $bdd='dbname=applietudiants_sio_mvc';   		
+      	private static $user='applietudiants2' ;    		
+      	private static $mdp='sio' ;	
+        private static $myPdo=null;
+        private static $myPdoSio=null;
         
         private function __construct(){
-    	PdoSio::$monPdo = new PDO(PdoSio::$serveur.';'.PdoSio::$bdd, PdoSio::$user, PdoSio::$mdp); 
-		PdoSio::$monPdo->query("SET CHARACTER SET utf8");
+    	PdoSio::$myPdo = new PDO(PdoSio::$serveur.';'.PdoSio::$bdd, PdoSio::$user, PdoSio::$mdp); 
+		PdoSio::$myPdo->query("SET CHARACTER SET utf8");
 	}
         
         public function _destruct(){
-            PdoSio::$monPdo = null;
+            PdoSio::$myPdo = null;
         }
         
         public  static function getPdoSio(){
-            if(PdoSio::$monPdoSio==null){
-                PdoSio::$monPdoSio= new PdoSio();
+            if(PdoSio::$myPdoSio==null){
+                PdoSio::$myPdoSio= new PdoSio();
             }
-            return PdoSio::$monPdoSio;
+            return PdoSio::$myPdoSio;
         }
 
-        public function requeteAction($requete){
-            $res=PdoSio::$monPdo->exec($requete);
+
+        /* TO USE ACTION REQUEST
+        * Example:  
+        * $pdo = PdoSio::getPdoSio();
+        * $pdo->requestAction("DELETE FROM photo WERE id_user = $idInput");
+        *
+        */
+        public function actionRequest($request){
+            $res=PdoSio::$myPdo->exec($request);
             return $res>0;
             
         }
-        public function requeteSelection($requete){
+
+
+
+
+
+        /* TO USE SELECTION REQUEST
+        * Example:  
+        * $pdo = PdoSio::getPdoSio();
+        * $resultats = $pdo->requestSelection("SELECT id_user FROM user WHERE identifiant ='toto'");
+        * if ($resultats) {
+        *   $idInput = $resultats[0]['id_user'];
+        *   echo "idInput";
+        *   }
+        */
+
+
+        public function selectRequest($request){
             
-            $res= PdoSio::$monPdo->query($requete);
+            $res= PdoSio::$myPdo->query($request);
 
             if($res==null){
              return null;   
@@ -44,10 +67,10 @@ class PdoSio{
          * @author NC 
          * @return boolean true si la connexion est ok, false sinon
          * @param string $identifiant identifiant de l'utilisateur
-         * @param int $motDePasse mot de passe à crypter en md5
+         * @param int $password mot de passe à crypter en md5
          */
-        public function connexionUtilisateur($identifiant,$motDePasse){
-            $resultats=$this->requeteSelection("select * from utilisateurs where identifiant='$identifiant' and mot_de_passe='".md5($motDePasse)."'");
+        public function userConnection($identifiant,$password){
+            $resultats=$this->requestSelection("select * from users where identifiant='$identifiant' and password='".md5($password)."'");
 
             if(count($resultats)>0){
                 
