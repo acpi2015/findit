@@ -5,7 +5,7 @@
 
 
 //$pdo = PdoSio::getPdoSio();
-require_once ("./vues/v_header.php");
+require_once ("./view/v_header.php");
 
 if(!isset($_REQUEST['uc']) ){
      $_REQUEST['uc'] = 'home';
@@ -15,20 +15,20 @@ $uc = $_REQUEST['uc'];
 switch($uc){
 	case 'home':{  
                 ob_end_flush();
-                include("controleurs/c_home.php");
+                include("controller/c_home.php");
                 /** =====> affichage du pied de page */
-                include("vues/v_footer.php") ;
+                include("view/v_footer.php") ;
                 break;
 	}
 	case 'seach':{      
-                include("controleurs/c_search.php");
-                include("vues/v_footer.php") ;
+                include("controller/c_search.php");
+                include("view/v_footer.php") ;
                 break;
 	}
                
         
     default :
-        include("controleurs/c_home.php");
+        include("controller/c_home.php");
         
     
 }
