@@ -1,3 +1,4 @@
+@import "fonts.css";
 
 /* ==========================================================================
    Made by Irvin
@@ -23,6 +24,7 @@ body {
 	background: url('../img/background.jpg') no-repeat center fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
+	font-family: 'Slabo', Arial, Verdana, sans-serif;
 }
 
 button#menu-toggle {
@@ -32,10 +34,21 @@ button#menu-toggle {
 }
 
 .container-fluid {
-	margin-top: 20px;
 	color: #fff;
 	padding: 20px 20px 10px 20px;
-	margin: 100px auto;
+	margin: 30px auto;
+}
+
+.title {
+	font-family: 'Poetsen';
+	color: #fff;
+	font-size: 55px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+a:hover {
+	text-decoration: none;
 }
 
 @media(min-width: 992px) {

@@ -39,6 +39,9 @@
 
             <div class="container-fluid">
                 <div class="row">
+                    <a href="index.php?uc=home">
+                        <div class="title">FindIt</div>
+                    </a>
                     <div class="col-lg-12">
                         <h2>Accueil</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

@@ -39,6 +39,9 @@
 
             <div class="container-fluid">
                 <div class="row">
+                    <a href="index.php?uc=home">
+                        <div class="title">FindIt</div>
+                    </a>
                     <div class="col-lg-12">
                         <h2>Rechercher une personne par nom/prénom</h2>
                         <form class="form-horizontal" role="form">
