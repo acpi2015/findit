@@ -16,16 +16,19 @@ switch($uc){
 	case 'home':{  
                 ob_end_flush();
                 include("controller/c_home.php");
-                /** =====> affichage du pied de page */
-                include("view/v_footer.php") ;
+                include("view/v_footer.php");
                 break;
 	}
-	case 'seach':{      
+	case 'search':{      
                 include("controller/c_search.php");
-                include("view/v_footer.php") ;
+                include("view/v_footer.php");
                 break;
 	}
-               
+    case 'searchByName':{      
+                include("controller/c_search_by_name.php");
+                include("view/v_footer.php");
+                break;
+    }         
         
     default :
         include("controller/c_home.php");
