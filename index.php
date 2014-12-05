@@ -19,21 +19,31 @@ switch($uc){
                 include("view/v_footer.php");
                 break;
 	}
-	case 'search':{      
-                include("controller/c_search.php");
-                include("view/v_footer.php");
-                break;
-	}
+
     case 'searchByName':{      
                 include("controller/c_search_by_name.php");
                 include("view/v_footer.php");
                 break;
-    }        
+    }  
+
+    case 'searchByCriteria':{      
+                include("controller/c_search_by_criteria.php");
+                include("view/v_footer.php");
+                break;
+    }     
+
     case 'login':{
                 include("controller/c_login.php");
                 include("view/v_footer.php");
                 break; 
     } 
+    case 'noResultName':{  
+                include("controller/c_no_result_name.php");
+                include("view/v_footer.php");
+                break;
+    }
+
+
         
     default :
         include("controller/c_home.php");
