@@ -12,30 +12,32 @@
         <i class="glyphicon glyphicon-th"></i>
     </button>
 
-        <div class="container-fluid">
-            <div class="row">
-                <a href="index.php?uc=home">
-                    <div class="title">FindIt</div>
-                </a>
-                <div class="col-lg-12">
-                    <h2>Login</h2>
-                    <form class="form-horizontal" role="form">
-                        <div class="form-group">
-                            <label for="inputPassword" class="col-sm-4 control-label">Email</label>
-                            <div class="col-sm-5">
-                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            <div class="container-fluid">
+                <div class="row">
+                    <a href="index.php?uc=home">
+                        <div class="title">FindIt</div>
+                    </a>
+                    <div class="col-lg-12">
+                        <h2>Login</h2>
+                        <form class="form-horizontal" role="form" action="index.php?uc=login&action=isValid" method="post">
+                            <div class="form-group">
+                                <label for="inputEmail" class="col-sm-4 control-label">Email</label>
+                                <div class="col-sm-5">
+                                    <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputPassword" class="col-sm-4 control-label">Password</label>
-                            <div class="col-sm-5">
-                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                            <div class="form-group">
+                                <label for="inputPassword" class="col-sm-4 control-label">Password</label>
+                                <div class="col-sm-5">
+                                    <input type="password" class="form-control" id="inputPassword" name="inputPassword" placeholder="Password">
+                                </div>
                             </div>
-                        </div>
-                        <div class="btn-search">
-                            <button type="button" class="btn btn-primary btn-lg">Connexion</button>
-                        </div>
-                    </form>
+                            <div class="btn-search">
+                                <button type="submit" class="btn btn-primary btn-lg">Connexion</button>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </div>

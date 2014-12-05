@@ -13,15 +13,7 @@
 			$pdo = PdoSio::getPdoSio();
 			
 			$sql="SELECT 
-			firstNamePerson, 
-			lastNamePerson, 
-			photoPerson, 
-			sexPerson,
-			sizePerson, 
-			corpulencePerson, 
-			hairColorPerson, 
-			tatooPerson, 
-			idOrganizationPerson
+			idPerson
 			FROM Persons 
 			WHERE firstNamePerson =\"".$firstname."\"
 			OR lastNamePerson = \"".$name."\";";
@@ -29,10 +21,7 @@
 			$resultats = $pdo->selectRequest($sql);
 			if ($resultats) {
 				foreach ($resultats as $value){
-					$toInsert = new Person($value['firstNamePerson'],$value['lastNamePerson'],$value['photoPerson'],
-						$value['sexPerson'],$value['sizePerson'],$value['corpulencePerson'],$value['hairColorPerson'],
-						$value['tatooPerson'],$value['idOrganizationPerson']);
-					$ret[] = $toInsert;
+					$ret[] = $value['idPerson'];
 				}
 			} 
 		//requete pour recupérerles personnes en fct des noms et prenoms

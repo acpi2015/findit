@@ -24,12 +24,12 @@ function buttonSearchClicked($name, $firstname){
 	var_dump ($person);
 	if(count($person) >0){
 		if(count($person) == 1){
-			//Afficher page personne
+			header("Location: index.php?uc=profil&idUser=".$person[0]."");
 		} else {
 			//proposer les différents resultats
 		}
 	} else {
-		//Charger page pas de resultat + proposer recherche en mode qui est-ce
+		header("Location: index.php?uc=noResultName");
 	}
 }
 
