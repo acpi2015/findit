@@ -57,6 +57,12 @@ switch($uc){
                 break; 
     }
 
+    case 'addProfil':{
+                include("controller/c_add_profil.php");
+                include("view/v_footer.php");
+                break; 
+    }
+
     default :
                 include("controller/c_home.php");
                 include("view/v_footer.php");
