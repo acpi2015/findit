@@ -1,9 +1,9 @@
 <?php
-class PdoSio{   		
-      	private static $serveur='mysql:host=mysql51-44.pro';
-      	private static $bdd='dbname=projetsbxnuit';   		
-      	private static $user='projetsbxnuit' ;    		
-      	private static $mdp='greenShrimp' ;	
+class PdoSio{  
+      	private static $serveur='mysql:host=localhost';
+      	private static $bdd='projetsbxnuit';   		
+      	private static $user='nicolas' ;    		
+      	private static $mdp='toto' ;	
         private static $myPdo=null;
         private static $myPdoSio=null;
         
@@ -69,8 +69,8 @@ class PdoSio{
          * @param string $identifiant identifiant de l'utilisateur
          * @param int $password mot de passe à crypter en md5
          */
-        public function userConnection($identifiant,$password){
-            $resultats=$this->requestSelection("select * from users where identifiant='$identifiant' and password='".md5($password)."'");
+        public function userConnection($email,$password){
+            $resultats=$this->requestSelection("select * from Admin, Organization where Organization.emailOrganization ='$email' and Admin.passwordAdmin='".md5($password)."' and Admin.idOrganizationAdmin = Organization.idOrganization");
 
             if(count($resultats)>0){
                 
