@@ -59,6 +59,32 @@ a:hover {
 	background-color: #fff;
 }
 
+.admin-bloc {
+	background-color: #fff;
+	color: black;
+	padding: 20px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid rgb(96, 96, 96);
+	text-align: center;
+}
+
+.admin-bloc a{
+	display: block;
+	margin-bottom: 20px;
+}
+
+.admin-bloc button{
+	width: 200px;
+}
+
+button#menu-logout {
+	right: 18px;
+	top: 18px;
+	position: absolute;
+}
+
 @media(min-width: 992px) {
 	.container-fluid {
 		width: 940px;

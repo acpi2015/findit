@@ -55,6 +55,11 @@ switch($uc){
                 include("controller/c_profile.php");
                 include("view/v_footer.php");
                 break;
+
+    case 'successLogin':{
+                include("controller/c_admin.php");
+                include("view/v_footer.php");
+                break; 
     }
 
     default :
