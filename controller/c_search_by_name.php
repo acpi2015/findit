@@ -26,7 +26,9 @@ function buttonSearchClicked($name, $firstname){
 		if(count($person) == 1){
 			header("Location: index.php?uc=profil&idUser=".$person[0]."");
 		} else {
-			//proposer les différents resultats
+			session_start();
+			$_SESSION['ids'] = $person;
+			header("Location: index.php?uc=noResultName"); //to change
 		}
 	} else {
 		header("Location: index.php?uc=noResultName");
