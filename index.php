@@ -5,7 +5,7 @@ require_once("model/fct.inc.php");
 require_once ("model/class.pdoSio.inc.php");
 
 
-
+session_start();
 $pdo = PdoSio::getPdoSio();
 require_once ("./view/v_header.php");
 
