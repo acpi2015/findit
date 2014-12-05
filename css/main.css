@@ -25,6 +25,7 @@ body {
 	background-size: cover;
 	-webkit-background-size: cover;
 	font-family: 'Slabo', Arial, Verdana, sans-serif;
+	overflow-x: hidden;
 }
 
 button#menu-toggle {
