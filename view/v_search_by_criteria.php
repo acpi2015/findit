@@ -6,6 +6,7 @@
 -->
 <!-- Page Content -->
 <div id="page-content-wrapper">
+  <?php include('v_sidemenu.php'); ?>
 
 	<button type="button" href="#menu-toggle" class="btn btn-default" id="menu-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 		<i class="glyphicon glyphicon-th"></i>
