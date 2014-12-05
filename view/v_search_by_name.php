@@ -23,13 +23,13 @@
                             <div class="form-group">
                                 <label for="inputPassword" class="col-sm-4 control-label">Rechercher par nom</label>
                                 <div class="col-sm-5">
-                                    <input type="password" class="form-control" id="inputPassword" placeholder="Nom">
+                                    <input type="text" class="form-control" id="inputPassword" placeholder="Nom">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="inputPassword" class="col-sm-4 control-label">Rechercher par prénom</label>
                                 <div class="col-sm-5">
-                                    <input type="password" class="form-control" id="inputPassword" placeholder="Prénom">
+                                    <input type="text" class="form-control" id="inputPassword" placeholder="Prénom">
                                 </div>
                             </div>
                             <div class="btn-search">
@@ -41,6 +41,16 @@
             </div>
         </div>
         <!-- /#page-content-wrapper -->
+
+        <form action="c_form_search_by_name.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" name="name" />
+            <br/>
+            <label for="firstname">Firstname</label>
+            <input type="text" name="firstname" />
+            <br/>
+            <input type="submit" value="Search" name="submit"/>
+        </form>
 
     </div>
     <!-- /#wrapper -->
