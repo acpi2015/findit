@@ -2,8 +2,11 @@
 	font-family: 'Slabo';
 	font-style: normal;
 	font-weight: 400;
-	src: local('Slabo'), local('Slabo-Regular'), url(../fonts/slabo.woff2) format('woff2');
-	unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+	src: url('../fonts/slabo.eot');
+	src: url('../fonts/slabo.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/slabo.woff') format('woff'),
+	url('../fonts/slabo.ttf') format('truetype'),
+	url('../fonts/slabo.svg#poetsen_oneregular') format('svg');
 }
 
 @font-face {
