@@ -36,20 +36,20 @@ switch($uc){
                 include("controller/c_login.php");
                 include("view/v_footer.php");
                 break; 
+
     } 
+
     case 'noResultName':{  
                 include("controller/c_no_result_name.php");
                 include("view/v_footer.php");
                 break;
     }
-
-
-        
+  
     default :
-        include("controller/c_home.php");
-        
+                include("controller/c_home.php");
+                include("view/v_footer.php");
+                break; 
     
 }
 
 ?>
-
