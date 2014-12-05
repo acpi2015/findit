@@ -33,7 +33,13 @@ switch($uc){
                 include("controller/c_login.php");
                 include("view/v_footer.php");
                 break; 
-    } 
+    }
+    case 'searchByCriteria':{
+                include("controller/c_search_by_criteria.php");
+                include("view/v_footer.php");
+                break; 
+    }
+
         
     default :
         include("controller/c_home.php");
