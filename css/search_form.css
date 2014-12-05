@@ -1,0 +1,45 @@
+.form-container{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.choice{
+  width: 125px;
+  height: 125px;
+}
+.step-item{
+  margin: 50% 0;
+}/*
+.step-container{
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+*/
+.color-item{
+  width: 70px;
+  height: 70px;
+}
+  .european{
+    background-color: #E8CDA8;
+  }
+  .asian{
+    background-color: #ffe39f ;
+  }
+  .indian{
+    background-color: #935D37;
+  }
+  .african{
+    background-color: #573719;
+  }
+  .blond{
+    background-color: #F2DA91;
+  }
+  .brown{
+    background-color: #800000;
+  }
+  .black{
+    background-color: #000;
+  }
+
