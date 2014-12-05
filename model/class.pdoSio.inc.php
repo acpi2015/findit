@@ -1,9 +1,9 @@
 <?php
 class PdoSio{  
       	private static $serveur='mysql:host=localhost';
-      	private static $bdd='projetsbxnuit';   		
-      	private static $user='nicolas' ;    		
-      	private static $mdp='toto' ;	
+      	private static $bdd='dbname=projetsbxnuit';   		
+      	private static $user='root' ;    		
+      	private static $mdp='' ;	
         private static $myPdo=null;
         private static $myPdoSio=null;
         
@@ -54,7 +54,6 @@ class PdoSio{
         public function selectRequest($request){
             
             $res= PdoSio::$myPdo->query($request);
-
             if($res==null){
              return null;   
             }else{  

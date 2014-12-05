@@ -1,6 +1,6 @@
 <?php
 //require_once("include/fct.inc.php");
-//require_once ("include/class.pdoSio.inc.php");
+require_once ("model/class.pdoSio.inc.php");
 
 
 
@@ -55,7 +55,7 @@ switch($uc){
                 include("controller/c_profile.php");
                 include("view/v_footer.php");
                 break;
-
+    }       
     case 'successLogin':{
                 include("controller/c_admin.php");
                 include("view/v_footer.php");
