@@ -16,3 +16,6 @@
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
+<body>
+
+<div class="visible-xs"></div>

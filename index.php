@@ -39,8 +39,8 @@ switch($uc){
                 include("view/v_footer.php");
                 break; 
     }
+    
 
-        
     default :
                 include("controller/c_home.php");
                 include("view/v_footer.php");
