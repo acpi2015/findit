@@ -21,7 +21,6 @@ switch($action){
 function buttonSearchClicked($name, $firstname){
 	$model = new ModelFormSearchByName();
 	$person = $model->searchByName($name, $firstname);
-	var_dump ($person);
 	if(count($person) >0){
 		session_start();
 		$_SESSION['ids'] = $person;
