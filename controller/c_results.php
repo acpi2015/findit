@@ -11,7 +11,7 @@ switch($action){
 			$tab[] = $value;
 		}
 		var_dump($tab);
-		include("view/v_search_by_name.php");
+		include("view/v_results.php");
 		break;
 	}
 }
