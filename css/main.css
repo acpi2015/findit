@@ -1,0 +1,65 @@
+@import "fonts.css";
+
+/* ==========================================================================
+   Made by Irvin
+   ========================================================================== */
+
+/* Title */
+h2 {
+	font-size: 22px;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.btn-search {
+	width: 127px;
+	margin: 10px auto 10px auto;
+}
+
+.btn-search button {
+	outline: none !important;
+}
+
+body {
+	background: url('../img/background.jpg') no-repeat center fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	font-family: 'Slabo', Arial, Verdana, sans-serif;
+	overflow-x: hidden;
+}
+
+button#menu-toggle {
+	outline: none;
+	top: 0;
+	left: 0;
+}
+
+.container-fluid {
+	color: #fff;
+	padding: 20px 20px 10px 20px;
+	margin: 30px auto;
+}
+
+.title {
+	font-family: 'Poetsen';
+	color: #fff;
+	font-size: 55px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+@media(min-width: 992px) {
+	.container-fluid {
+		width: 940px;
+	}
+}
+
+@media(max-width: 992px) {
+	.container-fluid {
+		width: 100%;
+	}
+}
