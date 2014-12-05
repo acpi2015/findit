@@ -1,5 +1,9 @@
 <?php
 
+if (!isset($_REQUEST['action'])){
+    $_REQUEST['action']="afficherAccueil";
+}
+
 	$action = $_REQUEST['action'];
 	switch($action)
 	{

@@ -53,13 +53,18 @@ switch($uc){
                 break;
     }
 
+    case 'results':{
+                include("controller/c_results.php");
+                include("view/v_footer.php");
+                break; 
+    }
+
     case 'profile':{  
                 include("controller/c_profile.php");
                 include("view/v_footer.php");
                 break;
 
     }
-      
 
     case 'successLogin':{
                 include("controller/c_admin.php");
