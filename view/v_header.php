@@ -2,7 +2,8 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -15,7 +16,7 @@
         <link rel="stylesheet" type="text/css" href="css/sidemenu.css">
         <?php
             if ($_REQUEST['uc'] == "searchByCriteria"){
-                echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"css/search_form.css\">";
+                echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"css/search_by_criteria.css\">";
             }
         ?>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
