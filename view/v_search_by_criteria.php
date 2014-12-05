@@ -1,12 +1,11 @@
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-<!-- <div id="wrapper" class="toggled">
-  <?php // include('v_sidemenu.php'); ?>
--->
+<div id="wrapper" class="toggled">
+  <?php include('v_sidemenu.php'); ?>
+
 <!-- Page Content -->
 <div id="page-content-wrapper">
-  <?php include('v_sidemenu.php'); ?>
 
 	<button type="button" href="#menu-toggle" class="btn btn-default" id="menu-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 		<i class="glyphicon glyphicon-th"></i>
