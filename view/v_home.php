@@ -3,32 +3,7 @@
     <![endif]-->
 
     <div id="wrapper" class="toggled">
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        FindIt
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">Accueil</a>
-                </li>
-                <li>
-                    <a href="backlog.php">Backlog</a>
-                </li>
-                <li>
-                    <a href="">Login</a>
-                </li>
-                <li>
-                    <a href="#">Rechercher par nom</a>
-                </li>
-                <li>
-                    <a href="#">Rechercher par critère</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
+        <?php include('v_sidemenu.php'); ?>
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
