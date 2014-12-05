@@ -4,9 +4,11 @@
   height: 100%;
 }
 .step-container{
-  width: 70vw;
-  height: 80vh;
+  width: 100%;
   padding-top: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px 40px;
+  margin: 20px 0;
 }
 .choice{
   width: 100px;

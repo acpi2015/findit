@@ -16,7 +16,7 @@
         <link rel="stylesheet" type="text/css" href="css/sidemenu.css">
         <?php
             if ($_REQUEST['uc'] == "searchByCriteria"){
-                echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"css/search_form.css\">";
+                echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"css/search_by_criteria.css\">";
             }
         ?>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>

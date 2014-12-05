@@ -40,6 +40,12 @@ button#menu-toggle {
 	margin: 30px auto;
 }
 
+.container-criteria {
+	color: #fff;
+	padding: 20px 20px 10px 20px;
+	margin: 30px auto;
+}
+
 .title {
 	font-family: 'Poetsen';
 	color: #fff;
@@ -89,10 +95,16 @@ button#menu-logout {
 	.container-fluid {
 		width: 940px;
 	}
+	.container-criteria {
+		width: 600px;
+	}
 }
 
 @media(max-width: 992px) {
 	.container-fluid {
+		width: 100%;
+	}
+	.container-criteria {
 		width: 100%;
 	}
 }

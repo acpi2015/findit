@@ -11,39 +11,39 @@
 		<i class="glyphicon glyphicon-th"></i>
 	</button>
 
-	<div class="container">
+	<div class="container-criteria">
 	<div class="form-container">
 		<form action="" class="form">
 
-			<div class="container step-container gender">
+			<div class="container step-container gender col-md-12">
 				<div class="row step-item">
 					<label for="sexe">Sexe</label>
 					<div class="step-choice">
 							<button type="button" class="btn btn-default choice"><img src="img/icon-female.png" alt=""></button>
 							<button type="button" class="btn btn-default choice"><img src="img/icon-male.png" alt=""></button>
 						</div>
-					</div>
-					<div class="row step-action">
-					<button type="submit" class="btn btn-link pull-left">Skip</button>
+					<div class="step-action">
+					<button type="submit" class="btn btn-warning pull-left">Skip</button>
 					<button type="submit" class="btn btn-success pull-right">Submit</button>
 				</div>
 				</div>
 			</div>
 
-			<div class="container step-container growth">
+			<div class="container step-container growth col-md-12">
 				<div class="row step-item">
 					<label for="growth">Growth</label>
+          <div class="step-choice">
 							<button type="button" class="btn btn-default choice"><img src="img/icon-children.png" alt=""></button>
 							<button type="button" class="btn btn-default choice"><img src="img/icon-adults.png" alt=""></button>
-
-					<div class="row step-action">
-						<button type="submit" class="btn btn-link pull-left">Skip</button>
+          </div>
+					<div class="step-action">
+						<button type="submit" class="btn btn-warning pull-left">Skip</button>
 						<button type="submit" class="btn btn-success pull-right">Submit</button>
 					</div>
 				</div>
 			</div>
 
-			<div class="container step-container skin-color">
+			<div class="container step-container skin-color col-md-12">
 				<div class="row step-item">
 					<label for="type">Type</label>
 					<div class="row">
@@ -62,15 +62,15 @@
 							<button type="button" class="btn btn-default choice african">color 4</button>
 						</div>
 					</div>
-				</div>
-				<div class="row step-action">
-					<button type="submit" class="btn btn-link pull-left">Skip</button>
-					<button type="submit" class="btn btn-success pull-right">Submit</button>
+          <div class="step-action">
+            <button type="submit" class="btn btn-warning pull-left">Skip</button>
+            <button type="submit" class="btn btn-success pull-right">Submit</button>
+          </div>
 				</div>
 			</div>
 
 
-			<div class="container step-container hair-color">
+			<div class="container step-container hair-color col-md-12">
 				<div class="row step-item">
 					<label for="hair-color">Hair color</label>
 					<div class="step-choice">
@@ -78,14 +78,14 @@
 						<button type="button" class="btn btn-default three-choice brown">hair-color 2</button>
 						<button type="button" class="btn btn-default three-choice black">hair-color 3</button>
 					</div>
-					<div class="row step-action">
-						<button type="submit" class="btn btn-link pull-left">Skip</button>
+					<div class="step-action">
+						<button type="submit" class="btn btn-warning pull-left">Skip</button>
 						<button type="submit" class="btn btn-success pull-right">Submit</button>
 					</div>
 				</div>
 			</div>
 
-			<div class="container step-container continent">
+			<div class="container step-container continent col-md-12">
 				<div class="row step-item">
 					<label for="continent">Continent</label>
 					<div class="step-choice">
@@ -96,14 +96,14 @@
 						<button type="button" class="btn btn-default choice"><img src="img/icon-asia.png" alt=""></button>
 						<button type="button" class="btn btn-default choice">€</button> <!-- <img src="img/icon-europa.png" alt=""> -->
 					</div>
-					<div class="row step-action">
-						<button type="submit" class="btn btn-link pull-left">Skip</button>
+					<div class="step-action">
+						<button type="submit" class="btn btn-warning pull-left">Skip</button>
 						<button type="submit" class="btn btn-success pull-right">Submit</button>
 					</div>
 				</div>
 			</div>
 
-			<div class="container step-container nationality">
+			<div class="container step-container nationality col-md-12">
 				<div class="row step-item">
 					<label for="country">Country</label>
 					<div class="step-choice">
@@ -114,8 +114,8 @@
 						<button type="button" class="btn btn-default choice">nationality 5</button>
 						<button type="button" class="btn btn-default choice">nationality 6</button>
 					</div>
-					<div class="row step-action">
-						<button type="submit" class="btn btn-link pull-left">Skip</button>
+					<div class="step-action">
+						<button type="submit" class="btn btn-warning pull-left">Skip</button>
 						<button type="submit" class="btn btn-success pull-right">Submit</button>
 					</div>
 				</div>
@@ -135,7 +135,7 @@
 				</div>
 			</div> -->
 
-			<div class="container step-container size">
+			<div class="container step-container size col-md-12">
 				<div class="row step-item">
 					<label for="size">Size</label>
 					<div class="step-choice">
@@ -145,14 +145,14 @@
 						<button type="button" class="btn btn-default choice">1,75m</button>
 						<button type="button" class="btn btn-default choice">2m</button>
 					</div>
-					<div class="row step-action">
-						<button type="submit" class="btn btn-link pull-left">Skip</button>
+					<div class="step-action">
+						<button type="submit" class="btn btn-warning pull-left">Skip</button>
 						<button type="submit" class="btn btn-success pull-right">Submit</button>
 					</div>
 				</div>
 			</div>
 
-			<div class="container step-container corpulence">
+			<div class="container step-container corpulence col-md-12">
 				<div class="row step-item">
 					<label for="corpulence">Corpulence</label>
 					<div class="step-choice">
@@ -160,8 +160,8 @@
 						<button type="button" class="btn btn-default three-choice"><img src="img/icon-medium.png" alt=""></button>
 						<button type="button" class="btn btn-default three-choice"><img src="img/icon-obesity.png" alt=""></button>
 					</div>
-					<div class="row step-action">
-						<button type="submit" class="btn btn-link pull-left">Skip</button>
+					<div class="step-action">
+						<button type="submit" class="btn btn-warning pull-left">Skip</button>
 						<button type="submit" class="btn btn-success pull-right">Submit</button>
 					</div>
 				</div>
