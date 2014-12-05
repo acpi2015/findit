@@ -1,25 +1,25 @@
 .form-container{
-  display: block;
+  /*display: block;*/
   width: 100%;
   height: 100%;
 }
-.choice{
-  width: 125px;
-  height: 125px;
-}
-.step-item{
-  margin: 50% 0;
-}/*
 .step-container{
-  display: block;
-  width: 100vw;
-  height: 100vh;
+  width: 70vw;
+  height: 80vh;
+  padding-top: 40px;
+}
+.choice{
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+.three-choice{
+  width: 60px;
+  height: 60px;
 }
 
-*/
-.color-item{
-  width: 70px;
-  height: 70px;
+.step-action{
+  margin-top: 30px;
 }
   .european{
     background-color: #E8CDA8;
