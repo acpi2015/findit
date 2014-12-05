@@ -2,8 +2,8 @@
 class PdoSio{  
       	private static $serveur='mysql:host=localhost';
       	private static $bdd='dbname=projetsbxnuit';   		
-      	private static $user='root' ;    		
-      	private static $mdp='' ;	
+      	private static $user='nicolas' ;    		
+      	private static $mdp='toto' ;	
         private static $myPdo=null;
         private static $myPdoSio=null;
         

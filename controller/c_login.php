@@ -14,6 +14,8 @@ switch($action){
 		$bddEmail = $pdo->selectRequest("select loginAdmin from admin where loginAdmin ='".$formEmail."'");
 		$bddPass = $pdo->selectRequest("select passwordAdmin from admin where passwordAdmin ='".$formPass."'");
 
+		$_SESSION['email'] = $bddEmail;
+
 		if (!$bddEmail || !$bddPass){
 			echo ("compte non trouvé");
 
@@ -23,7 +25,7 @@ switch($action){
 		}
 
 			if($bddEmail==$formEmail && $bddPass==$formPass){
-				echo "ok";
+				header('Location:index.php?uc=successLogin');
 
 			}
 		

@@ -11,7 +11,10 @@ require_once ("./view/v_header.php");
 
 if(!isset($_REQUEST['uc']) ){
      $_REQUEST['uc'] = 'home';
-}	 
+}
+
+
+
 $uc = $_REQUEST['uc'];
 
 switch($uc){
@@ -72,11 +75,12 @@ switch($uc){
                 break; 
     }
 
-    default :
+    default:{
                 include("controller/c_home.php");
                 include("view/v_footer.php");
                 break; 
-    
+    }
 }
+
 
 ?>

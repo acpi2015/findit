@@ -1,3 +1,4 @@
+
 <?php
 
 if (!isset($_REQUEST['action'])){
@@ -5,22 +6,13 @@ if (!isset($_REQUEST['action'])){
 }
 $action = $_REQUEST['action'];
 switch($action){
-	case 'addPerson':{
+	case 'addProfil':{
 		include("view/v_add_profil.php");
 		break;
 	}
 	
-	case 'sendForm':{
-		include("view/v_in_form.php");
-		break;
-	}
-	case 'logout':{
-		session_destroy();
-		include("view/v_home.php");
-		break;
-	}
 	default :{
-		include("view/v_admin.php");
+		include("view/v_add_profil.php");
 		break;
 	}
 }

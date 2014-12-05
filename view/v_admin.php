@@ -12,9 +12,11 @@
             <i class="glyphicon glyphicon-th"></i>
         </button>
 
-        <button type="button" href="" class="btn btn-default" id="menu-logout">
+        <a href="index.php?uc=successAdmin&action=logou">
+        <button type="submit" class="btn btn-default" id="menu-logout">
             <i class="glyphicon glyphicon-off"></i>
         </button>
+    </a>
 
             <div class="container-fluid">
                 <div class="row">
@@ -31,9 +33,11 @@
                         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br/>
                         <div class="btn-group" role="group" aria-label="...">
                             <a href="">
-                                <button type="button" class="btn btn-success">
+                                 <form class="form-horizontal" role="form" action="index.php?uc=successLogin&amp;action=addPerson" method="post">
+                                <button type="submit" class="btn btn-success">
                                     <i class="glyphicon glyphicon-user"></i> Ajouter une personne
                                 </button>
+                            </form>
                             </a>
                             <a href="">
                                 <button type="button" class="btn btn-warning">

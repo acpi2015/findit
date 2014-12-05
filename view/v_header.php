@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/sidemenu.css">
         <?php
-            if ($_REQUEST['uc'] == "searchByCriteria"){
+            if (isset($_REQUEST['uc']) && $_REQUEST['uc'] == "searchByCriteria"){
                 echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"css/search_by_criteria.css\">";
             }
         ?>
