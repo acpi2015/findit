@@ -19,21 +19,23 @@
                     </a>
                     <div class="col-lg-12">
                         <h2>Rechercher une personne par nom/prénom</h2>
-                        <form class="form-horizontal" role="form">
+                        <form class="form-horizontal" role="form" action="index.php" method="get">
+                            <input type="hidden" name="uc" value="searchByName" />
+                            <input type="hidden" name="action" value="searchByName" />
                             <div class="form-group">
                                 <label for="inputPassword" class="col-sm-4 control-label">Rechercher par nom</label>
                                 <div class="col-sm-5">
-                                    <input type="text" class="form-control" id="inputPassword" placeholder="Nom">
+                                    <input type="text" name="name" class="form-control" id="inputPassword" placeholder="Nom">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="inputPassword" class="col-sm-4 control-label">Rechercher par prénom</label>
                                 <div class="col-sm-5">
-                                    <input type="text" class="form-control" id="inputPassword" placeholder="Prénom">
+                                    <input type="text" name="firstname" class="form-control" id="inputPassword" placeholder="Prénom">
                                 </div>
                             </div>
                             <div class="btn-search">
-                                <button type="button" class="btn btn-primary btn-lg">Rechercher</button>
+                                <button type="submit" class="btn btn-primary btn-lg">Rechercher</button>
                             </div>
                         </form>
                     </div>

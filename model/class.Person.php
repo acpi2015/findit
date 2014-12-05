@@ -13,15 +13,15 @@ class Person{
 	private $idONG;
 
 	public function Person($firstname, $lastname, $photo, $sex, $size, $corpulence, $hairColor, $tatoo, $idONG){
-	$this.firstname = $firstname;
-	$this.lastname = $lastname;
-	$this.photo = $photo;
-	$this.sex = $sex;
-	$this.size = $size;
-	$this.corpulence = $corpulence;
-	$this.hairColor = $hairColor;
-	$this.tatoo = $tatoo;
-	$this.idONG = $idONG;
+		$this->firstname = $firstname;
+		$this->lastname = $lastname;
+		$this->photo = $photo;
+		$this->sex = $sex;
+		$this->size = $size;
+		$this->corpulence = $corpulence;
+		$this->hairColor = $hairColor;
+		$this->tatoo = $tatoo;
+		$this->idONG = $idONG;
 	}
 
 	public function getFirstname(){return $this.firstname;}
