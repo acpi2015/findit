@@ -42,8 +42,9 @@ switch($uc){
 
         
     default :
-        include("controller/c_home.php");
-        
+                include("controller/c_home.php");
+                include("view/v_footer.php");
+                break; 
     
 }
 
