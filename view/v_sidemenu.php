@@ -19,7 +19,7 @@
             <a href="index.php?uc=searchByName">Rechercher par nom</a>
         </li>
         <li>
-            <a href="#">Rechercher par critère</a>
+            <a href="index.php?uc=searchByCriteria">Rechercher par critère</a>
         </li>
     </ul>
 </div>

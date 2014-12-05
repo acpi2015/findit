@@ -10,9 +10,16 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">     
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/sidemenu.css">
-
+        <?php
+            if ($_REQUEST['uc'] == "searchByCriteria"){
+                echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"css/search_form.css\">";
+            }
+        ?>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
+
+<body>
+
