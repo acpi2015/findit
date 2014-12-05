@@ -23,13 +23,10 @@ function buttonSearchClicked($name, $firstname){
 	$person = $model->searchByName($name, $firstname);
 	var_dump ($person);
 	if(count($person) >0){
-		if(count($person) == 1){
-			header("Location: index.php?uc=profil&idUser=".$person[0]."");
-		} else {
-			session_start();
-			$_SESSION['ids'] = $person;
-			header("Location: index.php?uc=noResultName"); //to change
-		}
+		session_start();
+		$_SESSION['ids'] = $person;
+
+		header("Location: index.php?uc=results"); //to change
 	} else {
 		header("Location: index.php?uc=noResultName");
 	}
